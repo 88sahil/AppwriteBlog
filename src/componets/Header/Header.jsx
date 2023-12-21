@@ -45,7 +45,7 @@ const Header = () => {
             </div>
             <div>
               {/* header navs */}
-            <ul className='flex gap-8 text-lg font-bold  items-center max-sm:text-sm sm:gap-4 sm:mr-7'>
+            <ul className='flex gap-8 text-lg font-bold  items-center max-sm:text-sm sm:gap-4 sm:mr-7 max-sm:mt-4'>
               {
                 navItems.map((item,index)=>{
                   return(
