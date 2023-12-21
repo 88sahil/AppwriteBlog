@@ -32,7 +32,7 @@ const Login = () => {
 
     }
   return (
-    <div className='flex w-full justify-center  items-center max-sm:items-start max-sm:min-h-[600px]'>
+    <div className='flex w-full justify-center min-h-screen items-center max-sm:items-start max-sm:min-h-[600px]'>
         <div className=' mx-auto max-w-lg rounded-xl p-8 bg-gray-100 shadow-sm shadow-black max-sm:mt-5'>
             <div className='mb-2 justify-center flex'>
                 <span>

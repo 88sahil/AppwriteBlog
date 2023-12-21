@@ -34,7 +34,7 @@ const SignUp = () => {
             <div className='max-sm:w-[230px] max-sm:px-3 p-8'>
                 <span className='w-full flex justify-center flex-col items-center'>
                     <Logo/>
-                    <span className='w-full'>
+                    <span className='w-'>
                         <p className='pt-8 text-gray-500 flex'>Already have account? <Link to="/Login" className='text-blue-500'>Login</Link></p>
                     </span>
                     {
