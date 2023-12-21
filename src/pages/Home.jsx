@@ -28,21 +28,17 @@ const Home = () => {
         )
     }else{
         return (
-            <div className='w-full py-8'>
-                <Container>
-                    <div className='flex flex-wrap sm:flex-1'>
+                    <div className='w-full flex flex-wrap  max-sm:max-w-screen-sm'>
                        {
                         post.map((item)=>{
                             return(
-                                <div key={item.$id} className='p-2 w-1/6'>
+                                <div key={item.$id} className=' flex p-2 w-1/4 max-sm:flex-1'>
                                     <PostCard {...item} />
                                 </div>
                             )
                         })
                        }
                     </div>
-                </Container>
-            </div>
         )   
     }
     

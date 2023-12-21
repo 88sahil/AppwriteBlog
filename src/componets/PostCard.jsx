@@ -13,7 +13,7 @@ const PostCard = ({
                 <div className='w-full mb-4'>
                     <img src={Services.getFilePreview(featuredImage)} alt={title} className=' object-contain rounded-xl'></img>
                 </div>
-                <h2 className='text-2xl justify-center flex w-full items-center sm:text-sm'>{title}</h2>
+                <h2 className='text-2xl justify-center flex w-full items-center max-sm:text-sm max-md:text-sm'>{title}</h2>
             </div>
         </Link>
   )

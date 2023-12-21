@@ -39,13 +39,16 @@ const Header = () => {
   ]
   return (
       <header className='header py-3 shadow w-full'>
-          <nav className=' flex justify-between items-center px-3'>
-            <div className='flex'>
+          <nav className=' flex flex-wrap justify-between items-center px-3'>
+            <div className='flex max-sm:w-full'>
+              <span className='w-full justify-center'>
               <Logo/>
+              </span>
+              
             </div>
             <div>
               {/* header navs */}
-            <ul className='flex gap-8 text-lg font-bold mr-16 items-center sm:text-sm sm:gap-4 sm:mr-7'>
+            <ul className='flex gap-8 text-lg font-bold  items-center max-sm:text-sm sm:gap-4 sm:mr-7'>
               {
                 navItems.map((item,index)=>{
                   return(
