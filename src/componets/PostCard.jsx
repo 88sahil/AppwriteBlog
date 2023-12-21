@@ -8,11 +8,13 @@ const PostCard = ({
 }) => {
   return (
         <Link to={`/post/${$id}`}>
-            <div className='w-full bg-gray-100 rounded-xl p-2'>
-                <div className='w-full mb-4'>
-                    <img src={Services.getFilePreview(featuredImage)} alt={title} className=' object-contain rounded-xl'></img>
+            <div className='w-[300px] h-[250px] bg-gray-300 p-2 rounded-md shadow-sm shadow-green-300'>
+                <div className=''>
+                    <img src={Services.getFilePreview(featuredImage)}  className="w-full h-[200px] object-cover rounded-lg" alt={title}></img>
                 </div>
-                <h2 className='text-2xl justify-center flex w-full items-center max-sm:text-sm max-md:text-sm'>{title}</h2>
+                <h2 className='text-center mt-2 font-bold'>
+                    {title}
+                </h2>
             </div>
         </Link>
   )

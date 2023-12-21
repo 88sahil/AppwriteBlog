@@ -27,11 +27,11 @@ const Home = () => {
         )
     }else{
         return (
-                    <div className='w-full flex flex-wrap'>
+                    <div className='w-full flex flex-wrap max-sm:item-center mt-4'>
                        {
                         post.map((item)=>{
                             return(
-                                <div key={item.$id} className=' flex p-2 w-1/4 flex-2 max-sm:w-full'>
+                                <div key={item.$id} className=' flex p-2 xl:w-1/4 flex-1 max-md:w-full justify-center'>
                                     <PostCard {...item} />
                                 </div>
                             )
