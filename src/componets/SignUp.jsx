@@ -31,10 +31,10 @@ const SignUp = () => {
   return (
     <div className='w-full min-h-screen bg-gray-300 flex justify-center items-center max-md:p-10 max-sm:h-[500px] max-sm:items-start'>
         <div className='rounded-xl shadow-sm shadow-black flex justify-center bg-white max-sm:p-10 max-sm:justify-start'>
-            <div className='max-sm:w-[230px] max-sm:px-4'>
+            <div className='max-sm:w-[230px] max-sm:px-3'>
                 <span className='w-full flex justify-center flex-col items-center'>
                     <Logo/>
-                    <span className=''>
+                    <span className='w-full'>
                         <p className='pt-8 text-gray-500 flex'>Already have account? <Link to="/Login" className='text-blue-500'>Login</Link></p>
                     </span>
                     {
