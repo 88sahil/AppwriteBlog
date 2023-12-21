@@ -30,7 +30,7 @@ const Home = () => {
         return (
             <div className='w-full py-8'>
                 <Container>
-                    <div className='flex flex-wrap'>
+                    <div className='flex flex-wrap sm:flex-1'>
                        {
                         post.map((item)=>{
                             return(
