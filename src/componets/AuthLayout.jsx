@@ -5,6 +5,7 @@ import { useSelector } from "react-redux"
 const Protected = ({children,authentication=true}) => {
     const navigate = useNavigate()
     const [Loader,setLoader] = useState(true)
+    const user = useSelector(state => state.auth.UserData)
     const userState = useSelector(state => state.auth.Status)
     console.log(userState)
     useEffect(()=>{

@@ -20,9 +20,8 @@ const Login = () => {
         const session  = await authServices.login(data)
         if(session){
             const UserData = await authServices.getCurrentuser()
-            console.log()
             if(UserData){
-                dispatch(authLogin(UserData))
+                dispatch(authLogin({UserData}))
             }
             navigate("/")
         }

@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import {useNavigate} from 'react-router-dom'
 import {useSelector} from 'react-redux'
 import  Services  from '../../Appwrite/Config/Confing'
@@ -8,9 +8,6 @@ import Select from '../Select'
 import RTE from '../RTE'
 import Buttion from '../Buttion'
 const PostForm = ({post}) => {
-  const navigate = useNavigate()
-  const userData = useSelector(state => state.auth.UserData)
-  console.log(userData)
   const {register,handleSubmit,watch,setValue,control,getValues} = useForm({
     defaultValues:{
       title:post?.title || '',
@@ -19,6 +16,10 @@ const PostForm = ({post}) => {
       status:post?.content || "active",
     }
   })
+  const navigate = useNavigate()
+  
+  const userData = useSelector((state) => state.auth.UserData)
+  console.log(userData)
   const submit = async(data)=>{
     if(post){
       const file = data.image[0] ? await Services.uploadfile(data.image[0]) : null

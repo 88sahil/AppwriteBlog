@@ -19,9 +19,8 @@ const SignUp = () => {
             const createuser = await authServices.createuser(data)
             console.log(createuser)
         if(createuser){
-            const user = await authServices.getCurrentuser()
-            console.log(user)
-            if(user) dispatch(authLogin(user))
+            const UserData = await authServices.getCurrentuser()
+            if(UserData) dispatch(authLogin({UserData}))
             navigate("/")
         }
         } catch (error) {
