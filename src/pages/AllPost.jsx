@@ -17,7 +17,7 @@ const AllPost = () => {
        <div className='w-full flex flex-wrap'>
        {
             post.map((item)=>(
-                <div key={item.$id} className='p-2 w-1/4 max-sm:w-full'>
+                <div key={item.$id} className='flex p-2 xl:w-1/4 flex-1 max-md:w-full justify-center'>
                         <PostCard {...item} />
                 </div>
             ))
