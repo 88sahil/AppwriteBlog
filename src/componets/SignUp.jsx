@@ -29,24 +29,24 @@ const SignUp = () => {
         }
     }
   return (
-    <div className='w-full min-h-screen bg-gray-300 flex justify-center items-center'>
-        <div className='rounded-xl shadow-sm shadow-black flex justify-center p-8 bg-white'>
-            <div className=''>
+    <div className='w-full min-h-screen bg-gray-300 flex justify-center items-center max-md:p-10 max-sm:h-[500px] max-sm:items-start'>
+        <div className='rounded-xl shadow-sm shadow-black flex justify-center bg-white max-sm:p-10 max-sm:justify-start'>
+            <div className='max-sm:w-[230px] max-sm:px-4'>
                 <span className='w-full flex justify-center flex-col items-center'>
                     <Logo/>
                     <span className=''>
-                        <p className='pt-8 text-gray-500'>Already have account? <Link to="/Login"><a className='text-blue-800'>Login</a></Link></p>
+                        <p className='pt-8 text-gray-500 flex'>Already have account? <Link to="/Login" className='text-blue-500'>Login</Link></p>
                     </span>
                     {
-                        error && <h2 className='text-red-500'>{error}</h2>
+                        error && <h2 className='text-red-500 flex flex-wrap'>{error}</h2>
                     }
                 </span>
                 {/* sign up form */}
                 <form className='' onSubmit={handleSubmit(create)}>
-                <div className='flex flex-col items-center gap-8 mt-12'>
+                <div className='flex flex-col items-center gap-8 mt-8'>
                     <Input 
                             type="email"
-                            className="w-[300px]"
+                            className="w-[300px] max-sm:w-[250px]"
                             placeholder="enter your email"
                             {
                                 ...register("email",{
@@ -59,7 +59,7 @@ const SignUp = () => {
                     />
                     <Input
                         type="password"
-                        className="w-[300px]"
+                        className="w-[300px] max-sm:w-[250px]"
                         placeholder="enter your password"
                         {
                             ...register("password",{
@@ -69,7 +69,7 @@ const SignUp = () => {
                     />
                     <Input
                         type="text"
-                        className="w-[300px]"
+                        className="w-[300px] max-sm:w-[250px]"
                         placeholder="enter your name"
                         {
                             ...register("name",{

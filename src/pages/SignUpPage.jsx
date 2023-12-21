@@ -3,7 +3,7 @@ import SignUp from '../componets/SignUp'
 
 const SignUpPage = () => {
   return (
-    <div>
+    <div className='p-4'>
         <SignUp />
     </div>
   )
