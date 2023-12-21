@@ -15,7 +15,6 @@ const App = () => {
       authServices.getCurrentuser().then((userData)=>{
           if(userData){
             dispatch(login({userData}))
-            console.log(userData)
           }else{
             dispatch(logout)
           }

@@ -11,7 +11,7 @@ const Input =React.forwardRef(({
         <div className=''>
             {
                 label && <label
-                className='px-1 py-1 inline-block'
+                className='px-1 py-1 font-bold inline-block'
                     htmlFor={Id}
                 >{label}</label>
             }

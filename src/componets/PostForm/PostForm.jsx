@@ -70,8 +70,9 @@ const PostForm = ({post}) => {
     })
   },[slugTransform,watch,setValue])
   return (
-      <form onSubmit={handleSubmit(submit)} className='w-full flex flex-wrap mt-10'>
-        <div className='w-2/3 px-2'>
+      <form onSubmit={handleSubmit(submit)} className='w-full flex max-sm:first-letter:
+      flex-wrap mt-10 justify-between'>
+        <div className='w-2/3 px-2 max-sm:w-full'>
           <Input
             label="Title"
             placeholder="Title"
@@ -94,7 +95,7 @@ const PostForm = ({post}) => {
             defaultValue={getValues('content')}
           />
         </div>
-        <div className='w-1/3 px-2'>
+        <div className='w-1/3 px-2 max-sm:w-full'>
             <Input 
               label="Image"
               type="file"
@@ -103,7 +104,7 @@ const PostForm = ({post}) => {
             />
             {
               post && 
-              <div className='w-full mb-4'>
+              <div className=' mb-4'>
                 <img 
                 src={Services.getFilePreview(post.featuredImage)}
                 alt={post.title}

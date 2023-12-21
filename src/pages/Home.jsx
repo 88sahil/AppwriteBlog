@@ -11,7 +11,6 @@ const Home = () => {
             }
         })
     },[])
-    console.log(post)
     if (post.length === 0) {
         return (
             <div className="w-full py-8 mt-4 text-center">
@@ -28,11 +27,11 @@ const Home = () => {
         )
     }else{
         return (
-                    <div className='w-full flex flex-wrap  max-sm:max-w-screen-sm'>
+                    <div className='w-full flex flex-wrap'>
                        {
                         post.map((item)=>{
                             return(
-                                <div key={item.$id} className=' flex p-2 w-1/4 max-sm:flex-1'>
+                                <div key={item.$id} className=' flex p-2 w-1/4 flex-2 max-sm:w-full'>
                                     <PostCard {...item} />
                                 </div>
                             )
