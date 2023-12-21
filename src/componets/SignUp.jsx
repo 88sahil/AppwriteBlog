@@ -31,7 +31,7 @@ const SignUp = () => {
   return (
     <div className='w-full min-h-screen bg-gray-300 flex justify-center items-center max-md:p-10 max-sm:h-[500px] max-sm:items-start'>
         <div className='rounded-xl shadow-sm shadow-black flex justify-center bg-white max-sm:p-10 max-sm:justify-start'>
-            <div className='max-sm:w-[230px] max-sm:px-3'>
+            <div className='max-sm:w-[230px] max-sm:px-3 w-[400px]'>
                 <span className='w-full flex justify-center flex-col items-center'>
                     <Logo/>
                     <span className='w-full'>
