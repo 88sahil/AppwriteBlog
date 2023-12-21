@@ -34,7 +34,7 @@ const Home = () => {
                        {
                         post.map((item)=>{
                             return(
-                                <div key={item.$id} className='p-2 w-1/4'>
+                                <div key={item.$id} className='p-2 w-1/6'>
                                     <PostCard {...item} />
                                 </div>
                             )
