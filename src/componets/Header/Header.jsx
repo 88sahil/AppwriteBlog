@@ -39,7 +39,7 @@ const Header = () => {
   ]
   return (
       <header className='header py-3 shadow w-full'>
-          <nav className=' flex flex-wrap justify-between max-sm:justify-center items-center px-3'>
+          <nav className=' flex flex-wrap justify-between max-sm:justify-center items-center px-3 max-sm:gap-6'>
             <div className='flex max-sm:w-full justify-center'>
                  <Logo/>
             </div>
