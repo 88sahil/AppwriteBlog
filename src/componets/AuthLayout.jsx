@@ -5,7 +5,8 @@ import { useSelector } from "react-redux"
 const Protected = ({children,authentication=true}) => {
     const navigate = useNavigate()
     const [Loader,setLoader] = useState(true)
-    const userState = useSelector((state) => state.auth.status)
+    const userState = useSelector(state => state.auth.Status)
+    console.log(userState)
     useEffect(()=>{
         if(authentication && userState !== authentication){
             navigate("/Login")

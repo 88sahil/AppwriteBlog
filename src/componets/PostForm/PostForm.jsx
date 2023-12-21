@@ -9,7 +9,7 @@ import RTE from '../RTE'
 import Buttion from '../Buttion'
 const PostForm = ({post}) => {
   const navigate = useNavigate()
-  const userData = useSelector((state) => state.auth.UserData)
+  const userData = useSelector(state => state.auth.UserData)
   console.log(userData)
   const {register,handleSubmit,watch,setValue,control,getValues} = useForm({
     defaultValues:{

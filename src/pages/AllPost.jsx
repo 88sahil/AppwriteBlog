@@ -8,7 +8,6 @@ const AllPost = () => {
       Services.getPost([]).then((posts)=>{
         if(posts){
             setpost(posts.documents)
-            console.log(posts.documents)
         }
     })
     },[])
