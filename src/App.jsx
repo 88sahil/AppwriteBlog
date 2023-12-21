@@ -12,9 +12,9 @@ const App = () => {
     const [Loading,setLoading] = useState(true)
     const dispatch = useDispatch()
     useEffect(()=>{
-      authServices.getCurrentuser().then((userData)=>{
-          if(userData){
-            dispatch(login({userData}))
+      authServices.getCurrentuser().then((UserData)=>{
+          if(UserData){
+            dispatch(login({UserData}))
           }else{
             dispatch(logout)
           }
